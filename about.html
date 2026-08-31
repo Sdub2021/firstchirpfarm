@@ -4,81 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — First Chirp Farm</title>
-  <meta name="description" content="The story and permaculture principles behind First Chirp Farm: Earth Care, People Care, Fair Share." />
+  <meta name="description" content="The story and permaculture principles behind First Chirp Farm." />
   <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: { colors: { forest: {50:'#f0f7f4',100:'#dceee6',200:'#bce0cf',300:'#8fc9b0',400:'#5aab8c',500:'#3a8f71',600:'#2a725a',700:'#235b49',800:'#1e493c',900:'#1a3c33'}, earth: {50:'#faf6f1',100:'#f2e8db',200:'#e4d0b7',400:'#c29466',600:'#a66640',800:'#714332'} } } } }
-  </script>
+  <script>tailwind.config={theme:{extend:{colors:{forest:{50:'#f0f7f4',100:'#dceee6',200:'#bce0cf',300:'#8fc9b0',400:'#5aab8c',500:'#3a8f71',600:'#2a725a',700:'#235b49',800:'#1e493c',900:'#1a3c33'},earth:{50:'#faf6f1',100:'#f2e8db',200:'#e4d0b7'}}}}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body class="page-inner bg-earth-50 text-forest-900 antialiased">
-  <header class="site-header">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="images/logo.svg" alt="" class="h-11 w-11 rounded-full ring-2 ring-white/30" />
-          <span class="brand text-xl sm:text-2xl font-semibold text-white">First Chirp Farm</span>
-        </a>
-        <nav class="nav-links hidden md:flex items-center gap-7" aria-label="Primary">
-          <a href="about.html" class="text-white font-semibold text-sm">About</a>
-          <a href="animals.html" class="text-white/90 hover:text-white text-sm font-medium">Animals</a>
-          <a href="school.html" class="text-white/90 hover:text-white text-sm font-medium">School</a>
-          <a href="land.html" class="text-white/90 hover:text-white text-sm font-medium">Land</a>
-          <a href="visit.html" class="bg-forest-500 hover:bg-forest-400 text-white px-5 py-2.5 rounded-full text-sm font-semibold">Visit</a>
-        </nav>
-        <button class="menu-toggle md:hidden text-white p-2" aria-label="Open menu" aria-expanded="false">
-          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </header>
-  <section class="relative pt-20 h-[420px] min-h-[320px] flex items-end overflow-hidden">
+  <header class="site-header"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3"><img src="images/logo.svg" alt="" class="h-11 w-11 rounded-full ring-2 ring-white/30" /><span class="brand text-xl sm:text-2xl font-semibold text-white">First Chirp Farm</span></a>
+    <nav class="nav-links hidden md:flex items-center gap-7" aria-label="Primary">
+      <a href="about.html" class="text-white font-semibold text-sm">About</a>
+      <a href="animals.html" class="text-white/90 hover:text-white text-sm font-medium">Animals</a>
+      <a href="school.html" class="text-white/90 hover:text-white text-sm font-medium">School</a>
+      <a href="land.html" class="text-white/90 hover:text-white text-sm font-medium">Land</a>
+      <a href="visit.html" class="bg-forest-500 hover:bg-forest-400 text-white px-5 py-2.5 rounded-full text-sm font-semibold">Visit</a>
+    </nav>
+    <button class="menu-toggle md:hidden text-white p-2" aria-label="Open menu" aria-expanded="false"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div></div></header>
+  <section class="relative pt-20 h-[420px] flex items-end overflow-hidden">
     <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=80" alt="Woodland edge" class="absolute inset-0 w-full h-full object-cover" />
     <div class="absolute inset-0 page-hero-overlay"></div>
-    <div class="relative z-10 max-w-6xl mx-auto px-4 pb-12">
-      <p class="text-forest-200 uppercase tracking-widest text-xs mb-2">Story and principles</p>
-      <h1 class="text-4xl sm:text-6xl font-bold text-white">About the farm</h1>
-    </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 pb-12"><p class="text-forest-200 uppercase tracking-widest text-xs mb-2">Story and principles</p><h1 class="text-4xl sm:text-6xl font-bold text-white">About the farm</h1></div>
   </section>
-  <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <p class="text-xl text-forest-800 leading-relaxed mb-6">First Chirp Farm began as a simple question: what if a piece of land could hold a sanctuary and a school at the same time — without one using the other up?</p>
-      <p class="text-lg text-forest-800 leading-relaxed mb-6">The name is the morning itself. Before tools, before plans, there is a first chirp. Birds. Rescued hens finding their voices. Children arriving and going quiet because something living is looking back at them.</p>
-      <p class="text-lg text-forest-800 leading-relaxed mb-6">This page is a working draft of the story. Details of place, people, and dates will be filled in as the farm is ready to share them. The ethics do not wait for a perfect origin myth.</p>
-    </div>
-  </section>
-  <section class="py-16 bg-forest-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Three ethics</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <article class="bg-white rounded-2xl p-8 shadow-md border border-forest-100"><h3 class="text-2xl font-semibold mb-3">Earth Care</h3><p class="text-forest-700 leading-relaxed">Build soil, hold water, plant diversity, leave edges wild. The farm is designed so fertility rises instead of leaving in a truck.</p></article>
-        <article class="bg-white rounded-2xl p-8 shadow-md border border-forest-100"><h3 class="text-2xl font-semibold mb-3">People Care</h3><p class="text-forest-700 leading-relaxed">Children, volunteers, neighbours, and anyone who arrives tired. Learning is slow, supervised, and honest about risk and kindness.</p></article>
-        <article class="bg-white rounded-2xl p-8 shadow-md border border-forest-100"><h3 class="text-2xl font-semibold mb-3">Fair Share</h3><p class="text-forest-700 leading-relaxed">Surplus food, knowledge, and time move outward. We do not take more animals than we can love well. Capacity is a form of ethics.</p></article>
-      </div>
-    </div>
-  </section>
-  <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl font-bold mb-6">How we work</h2>
-      <ul class="space-y-4 text-forest-800 text-lg">
-        <li><strong>Observe first.</strong> The land and the animals set the pace. Plans follow patterns, not the other way around.</li>
-        <li><strong>Stack functions.</strong> A hedge is food, shelter, windbreak, and a classroom wall.</li>
-        <li><strong>Small and slow.</strong> Better one well-kept paddock than ten stressed ones.</li>
-        <li><strong>Transparency.</strong> If we cannot take another rescue this month, we say so.</li>
-      </ul>
-      <p class="mt-10 text-forest-700">Want the longer version in person? <a class="text-forest-600 font-semibold" href="visit.html">Arrange a visit</a>.</p>
-    </div>
-  </section>
-  <footer class="bg-forest-900 text-forest-200 py-12">
-    <div class="max-w-6xl mx-auto px-4 text-center text-sm">
-      <p class="brand text-white text-xl mb-3">First Chirp Farm</p>
-      <p>&copy; <span data-year></span> · <a class="hover:text-white" href="mailto:hello@firstchirpfarm.com">hello@firstchirpfarm.com</a></p>
-    </div>
-  </footer>
+  <section class="py-20 bg-white"><div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <p class="text-xl text-forest-800 leading-relaxed mb-6">First Chirp Farm began as a simple question: what if a piece of land could hold a sanctuary and a school at the same time without one using the other up?</p>
+    <p class="text-lg text-forest-800 leading-relaxed mb-6">The name is the morning itself. Before tools, before plans, there is a first chirp.</p>
+    <p class="text-lg text-forest-800 leading-relaxed">This page is a working draft of the story. Details of place and dates can be filled in next.</p>
+  </div></section>
+  <section class="py-16 bg-forest-50"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <article class="bg-white rounded-2xl p-8 shadow-md border border-forest-100"><h2 class="text-2xl font-semibold mb-3">Earth Care</h2><p class="text-forest-700">Build soil, hold water, plant diversity, leave edges wild.</p></article>
+    <article class="bg-white rounded-2xl p-8 shadow-md border border-forest-100"><h2 class="text-2xl font-semibold mb-3">People Care</h2><p class="text-forest-700">Children, volunteers, neighbours. Learning is slow, supervised, and kind.</p></article>
+    <article class="bg-white rounded-2xl p-8 shadow-md border border-forest-100"><h2 class="text-2xl font-semibold mb-3">Fair Share</h2><p class="text-forest-700">We do not take more animals than we can love well. Capacity is ethics.</p></article>
+  </div></section>
+  <footer class="bg-forest-900 text-forest-200 py-10 text-center text-sm"><p>&copy; <span data-year></span> First Chirp Farm · <a class="hover:text-white" href="mailto:hello@firstchirpfarm.com">hello@firstchirpfarm.com</a></p></footer>
   <script src="js/main.js"></script>
-</body>
-</html>
+</body></html>

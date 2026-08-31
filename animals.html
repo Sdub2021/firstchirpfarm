@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animals — First Chirp Farm sanctuary</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{forest:{50:'#f0f7f4',100:'#dceee6',200:'#bce0cf',400:'#5aab8c',500:'#3a8f71',600:'#2a725a',800:'#1e493c',900:'#1a3c33'},earth:{50:'#faf6f1'}}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="page-inner bg-earth-50 text-forest-900 antialiased">
+  <header class="site-header"><div class="max-w-7xl mx-auto px-4"><div class="flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3"><img src="images/logo.svg" alt="" class="h-11 w-11 rounded-full" /><span class="brand text-xl font-semibold text-white">First Chirp Farm</span></a>
+    <nav class="nav-links hidden md:flex items-center gap-7">
+      <a href="about.html" class="text-white/90 text-sm">About</a>
+      <a href="animals.html" class="text-white font-semibold text-sm">Animals</a>
+      <a href="school.html" class="text-white/90 text-sm">School</a>
+      <a href="land.html" class="text-white/90 text-sm">Land</a>
+      <a href="visit.html" class="bg-forest-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold">Visit</a>
+    </nav>
+    <button class="menu-toggle md:hidden text-white p-2" aria-label="Open menu" aria-expanded="false"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div></div></header>
+  <section class="relative pt-20 h-[420px] flex items-end overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1800&q=80" alt="Chickens" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 page-hero-overlay"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 pb-12"><p class="text-forest-200 uppercase tracking-widest text-xs mb-2">Sanctuary residents</p><h1 class="text-4xl sm:text-6xl font-bold text-white">Animals in need</h1></div>
+  </section>
+  <section class="py-20 bg-white"><div class="max-w-3xl mx-auto px-4">
+    <p class="text-xl text-forest-800 leading-relaxed mb-6">When capacity allows, First Chirp Farm offers a species-appropriate home for animals who need one.</p>
+    <ul class="space-y-3 text-lg text-forest-800"><li>— Housing and enrichment that match the species</li><li>— Quality of life over how many we can take</li><li>— Honest about space, vet costs, and time</li></ul>
+  </div></section>
+  <section class="pb-20 bg-white"><div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-3 gap-8">
+    <article class="rounded-2xl overflow-hidden bg-forest-50 border border-forest-100"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80" alt="Hens" class="h-48 w-full object-cover" /><div class="p-6"><h2 class="text-2xl font-semibold mb-2">The flock</h2><p class="text-forest-700">Rescued hens. Placeholder until real names and photos go in.</p></div></article>
+    <article class="rounded-2xl overflow-hidden bg-forest-50 border border-forest-100"><img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=900&q=80" alt="Goats" class="h-48 w-full object-cover" /><div class="p-6"><h2 class="text-2xl font-semibold mb-2">The browsers</h2><p class="text-forest-700">Goats as land partners. Placeholder card.</p></div></article>
+    <article class="rounded-2xl overflow-hidden bg-forest-50 border border-forest-100"><img src="https://images.unsplash.com/photo-1484557985045-ed5c3097e0f2?auto=format&fit=crop&w=900&q=80" alt="Sheep" class="h-48 w-full object-cover" /><div class="p-6"><h2 class="text-2xl font-semibold mb-2">The grazers</h2><p class="text-forest-700">Sheep or other grazers as the farm grows.</p></div></article>
+  </div></section>
+  <section class="py-16 bg-forest-900 text-white text-center"><h2 class="text-3xl font-bold mb-4">Thinking of surrendering or sponsoring?</h2><p class="text-forest-200 mb-8">Write first. Do not arrive unannounced with an animal.</p><a href="visit.html" class="inline-block bg-forest-500 font-semibold px-8 py-3.5 rounded-full">Contact the farm</a></section>
+  <footer class="bg-forest-900 text-forest-200 py-10 text-center text-sm"><p>&copy; <span data-year></span> First Chirp Farm</p></footer>
+  <script src="js/main.js"></script>
+</body></html>
