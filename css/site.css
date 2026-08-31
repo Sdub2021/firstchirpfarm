@@ -1,0 +1,89 @@
+:root {
+  --forest-50: #f0f7f4;
+  --forest-100: #dceee6;
+  --forest-200: #bce0cf;
+  --forest-300: #8fc9b0;
+  --forest-400: #5aab8c;
+  --forest-500: #3a8f71;
+  --forest-600: #2a725a;
+  --forest-700: #235b49;
+  --forest-800: #1e493c;
+  --forest-900: #1a3c33;
+  --earth-50: #faf6f1;
+  --earth-100: #f2e8db;
+  --earth-200: #e4d0b7;
+  --earth-400: #c29466;
+  --earth-600: #a66640;
+  --earth-800: #714332;
+  --cream: #faf6f1;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--earth-50);
+  color: var(--forest-900);
+}
+
+.font-display,
+h1, h2, h3, .brand {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(26, 60, 51, 0.55) 0%, rgba(26, 60, 51, 0.35) 40%, rgba(26, 60, 51, 0.78) 100%);
+}
+
+.page-hero-overlay {
+  background: linear-gradient(to bottom, rgba(26, 60, 51, 0.5) 0%, rgba(26, 60, 51, 0.62) 100%);
+}
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.page-home .site-header {
+  background: transparent;
+}
+
+.page-inner .site-header,
+.site-header.is-scrolled {
+  background: rgba(26, 60, 51, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(26, 60, 51, 0.18);
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.notice {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--forest-100);
+  color: var(--forest-800);
+  font-size: 0.95rem;
+}
+
+.zone-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--forest-700), var(--forest-400), var(--earth-400));
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem 1.25rem;
+    background: rgba(26, 60, 51, 0.96);
+  }
+  .nav-links.open { display: flex; }
+}
